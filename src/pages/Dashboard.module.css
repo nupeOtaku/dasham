@@ -1,0 +1,41 @@
+.container {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    grid-template-rows: 6rem 1fr;
+}
+
+/* @media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+} */
+
+@media screen and (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.secondCol {
+    grid-column: span 1/-1;
+
+}
+
+
+.thirdCol {
+    grid-column: 2;
+    margin: 1rem 2rem 0 2rem;
+
+}
+
+@media screen and (max-width: 768px) {
+    .thirdCol {
+        display: flex;
+        margin: 1rem 0;
+        flex-direction: column;
+    }
+
+}
